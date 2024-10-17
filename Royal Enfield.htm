@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url(Img/R.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .left {
+            position: absolute;
+            /* border: 3px solid white; */
+            top: 8px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 120px;
+            height: 120px;
+            margin-top: 12px;
+            margin-left: 14px;
+        }
+
+        .mid {
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+            /* border: 3px solid yellow; */
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            /* border: 3px solid orange; */
+            right: 10px;
+            top: -4px;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 25px;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: red;
+        }
+
+        .btn {
+            border-radius: 7px;
+            height: 39px;
+            width: 150px;
+            border-color: red;
+            color: white;
+            background-color: red;
+            font-size: 17px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .btn:hover {
+            color: red;
+            background-color: white;
+            border-color: white;
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            margin-top: 95px;
+            margin-left: 27px;
+            display: inline-block;
+            width: fit-content;
+            height: 600px;
+            font-size: 40px;
+        }
+
+        .container,
+        .formgrroup {
+            display: block;
+            text-align: center;
+        }
+
+        .formgroup input {
+            border-radius: 51px;
+            width: 417px;
+            height: 37px;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+            font-size: 19px;
+        }
+
+        .x {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        button {
+            border-radius: 51px;
+            width: 241px;
+            height: 35px;
+            text-align: center;
+            margin-top: 40px;
+            border-color: red;
+            color: white;
+            background-color: red;
+            font-size: 19px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        button:hover {
+            color: red;
+            background-color: white;
+            border-color: white;
+        }
+
+        select {
+            border-radius: 30px;
+            text-align: center;
+            margin-left: 18px;
+            margin-top: 5px;
+            width: 140px;
+            height: 30px;
+            font-size: 15px;
+            font-family: 'Bree Serif', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Img/pngegg (2).png" alt="">
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Motorcycles</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Locate Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Finance</button>
+            <button class="btn">Get a Test Ride</button>
+        </div>
+    </header>
+    <div class="container">
+        <p>Ride into the Future: Prebook Your Royal Enfield's New Legend Now!</p>
+        <form action="backend.php">
+            <div class="formgroup">
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Contact Number">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Residential Address">
+            </div>
+            <div class="x">
+                Mode of Payment <select name="mode" id="pay">
+                    <option value="on">Net Banking</option>
+                    <option value="cash">Cash</option>
+                </select>
+            </div>
+
+            <button>Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
